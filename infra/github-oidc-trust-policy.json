@@ -1,0 +1,59 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::072508717210:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+        },
+        "StringLike": {
+          "token.actions.githubusercontent.com:sub": [
+            "repo:patel885/my-admin-app:ref:refs/heads/main",
+            "repo:patel885/aeroSportsAdmin:ref:refs/heads/main",
+            "repo:patel885/aerosportsadmin:ref:refs/heads/main",
+            "repo:patel885/movira-workforce:ref:refs/heads/main",
+            "repo:patel885/movira-workforce:ref:refs/heads/*",
+            "repo:manglesh1/Cashier:ref:refs/heads/main",
+            "repo:manglesh1/bookingportal:ref:refs/heads/main",
+            "repo:manglesh1/CRM:ref:refs/heads/main",
+            "repo:Bimal2002/customer-app:ref:refs/heads/master",
+            "repo:bimal2002/customer-app:ref:refs/heads/master"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "AllowMoviraControlMainBranch",
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::072508717210:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+          "token.actions.githubusercontent.com:sub": "repo:yugniranjan/movira-control:ref:refs/heads/main"
+        }
+      }
+    },
+    {
+      "Sid": "AllowMoviraHelpCenterMainBranch",
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::072508717210:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+          "token.actions.githubusercontent.com:sub": "repo:yugniranjan/movira-help-center:ref:refs/heads/main"
+        }
+      }
+    }
+  ]
+}
