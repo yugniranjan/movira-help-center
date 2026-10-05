@@ -18,9 +18,10 @@
             "repo:patel885/aerosportsadmin:ref:refs/heads/main",
             "repo:patel885/movira-workforce:ref:refs/heads/main",
             "repo:patel885/movira-workforce:ref:refs/heads/*",
-            "repo:manglesh1/Cashier:ref:refs/heads/main",
-            "repo:manglesh1/bookingportal:ref:refs/heads/main",
-            "repo:manglesh1/CRM:ref:refs/heads/main",
+            "repo:manglesh1/movira-cashier:ref:refs/heads/main",
+            "repo:manglesh1/movira-booking-portal:ref:refs/heads/main",
+            "repo:manglesh1/movira-staff:ref:refs/heads/main",
+            "repo:manglesh1/movira-crm:ref:refs/heads/main",
             "repo:Bimal2002/customer-app:ref:refs/heads/master",
             "repo:bimal2002/customer-app:ref:refs/heads/master"
           ]
