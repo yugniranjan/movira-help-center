@@ -1,6 +1,6 @@
 # Movira Help Center
 
-Public support documentation for the Movira360 park operations platform. The site is built with Next.js App Router and statically renders its documentation routes for fast delivery and search indexing.
+Public support documentation for the Movira360 location operations platform. The site is built with Next.js App Router and statically renders its documentation routes for fast delivery and search indexing.
 
 ## Local development
 

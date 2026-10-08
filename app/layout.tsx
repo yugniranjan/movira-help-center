@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://help.movira360.com"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Movira Help Center", template: "%s | Movira Help Center" },
-  description: "Guides, answers, and troubleshooting for the Movira360 park operations platform.",
+  description: "Guides, answers, and troubleshooting for the Movira360 location operations platform.",
   applicationName: "Movira Help Center",
   icons: {
     icon: "/movira360-logo.png",

@@ -9,7 +9,7 @@ export default function Home() {
   const popular = articles.filter((article) => article.featured).slice(0, 6);
   const supportEmail = process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "support@movira360.com";
   const journeys = [
-    { step: "01", title: "Set up your park", description: "Location, hours, zones, users, and permissions.", href: "/docs/getting-started-with-movira" },
+    { step: "01", title: "Set up your location", description: "Location, hours, zones, users, and permissions.", href: "/docs/getting-started-with-movira" },
     { step: "02", title: "Build what you sell", description: "Activities, memberships, promos, vouchers, and gift cards.", href: "/categories/catalog-inventory" },
     { step: "03", title: "Run daily operations", description: "Bookings, payments, waivers, POS, and staff schedules.", href: "/categories/bookings-calendar" },
     { step: "04", title: "Support and grow", description: "Customers, CRM, reporting, and troubleshooting.", href: "/categories/crm-communications" },
@@ -20,7 +20,7 @@ export default function Home() {
         <div className="hero-orb hero-orb-one" /><div className="hero-orb hero-orb-two" />
         <div className="shell hero-inner">
           <span className="eyebrow light"><i /> Movira360 Help Center</span>
-          <h1>Find the answer.<br />Keep your park moving.</h1>
+          <h1>Find the answer.<br />Keep your location moving.</h1>
           <p>Current, step-by-step guidance for setup, catalog, bookings, customers, payments, staff, CRM, and administration.</p>
           <SearchBox />
           <div className="quick-search"><span>Popular:</span><Link href="/docs/create-and-configure-memberships">Create a membership</Link><Link href="/docs/create-a-booking">Create a booking</Link><Link href="/docs/manage-users-roles-and-permissions">Manage permissions</Link></div>
@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="shell contact-band">
         <div className="contact-icon"><Icon name="customers" size={28} /></div>
-        <div><span className="eyebrow">Human support</span><h2>Still need a hand?</h2><p>Send our support team the park, page URL, and exact error. We’ll help you find the next step.</p></div>
+        <div><span className="eyebrow">Human support</span><h2>Still need a hand?</h2><p>Send our support team the location, page URL, and exact error. We’ll help you find the next step.</p></div>
         <a className="primary-button" href={`mailto:${supportEmail}`}>Contact support <Icon name="arrow" size={17} /></a>
       </section>
     </main>

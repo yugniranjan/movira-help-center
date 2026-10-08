@@ -30,56 +30,56 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "getting-started", title: "Getting started", description: "Set up your workspace, park details, users, and daily operating basics.", icon: "rocket", accent: "blue" },
+  { slug: "getting-started", title: "Getting started", description: "Set up your workspace, location details, users, and daily operating basics.", icon: "rocket", accent: "blue" },
   { slug: "bookings-calendar", title: "Bookings & calendar", description: "Create bookings, manage availability, take payments, and handle changes.", icon: "calendar", accent: "violet" },
   { slug: "catalog-inventory", title: "Catalog & inventory", description: "Build activities, passes, bundles, extras, promos, and stock items.", icon: "catalog", accent: "orange" },
   { slug: "customers-products", title: "Customers & products", description: "Customer profiles, gift cards, vouchers, memberships, and forms.", icon: "customers", accent: "green" },
   { slug: "payments-pos", title: "Payments & POS", description: "Configure terminals, process payments, issue refunds, and close the day.", icon: "card", accent: "cyan" },
   { slug: "workforce", title: "Workforce", description: "Schedules, time clock, leave, availability, documents, and approvals.", icon: "team", accent: "pink" },
   { slug: "crm-communications", title: "CRM & communications", description: "Customers, segments, email campaigns, automation, notifications, and the shared conversations inbox.", icon: "megaphone", accent: "amber" },
-  { slug: "admin-troubleshooting", title: "Admin & troubleshooting", description: "Roles, access, park switching, settings, and common issue resolution.", icon: "settings", accent: "slate" },
+  { slug: "admin-troubleshooting", title: "Admin & troubleshooting", description: "Roles, access, location switching, settings, and common issue resolution.", icon: "settings", accent: "slate" },
 ];
 
 export const articles: Article[] = [
   {
     slug: "getting-started-with-movira",
     title: "Get started with Movira360",
-    description: "A practical checklist for preparing your park workspace and completing your first day in Movira.",
+    description: "A practical checklist for preparing your location workspace and completing your first day in Movira.",
     category: "getting-started",
     minutes: 7,
     updated: "2026-08-07",
     featured: true,
     keywords: ["setup", "onboarding", "first day", "park", "workspace"],
     sections: [
-      { id: "before-you-begin", title: "Before you begin", paragraphs: ["Your Movira workspace is created for a specific park. The modules you can see depend on the park’s subscription and your assigned role."], bullets: ["Use the welcome email to set your permanent password.", "Confirm that the park name shown in the account switcher is correct.", "Ask your administrator for access if a required section is not visible."], callout: { tone: "info", title: "Park-specific access", text: "Switching parks can change the available navigation because each park may have different modules and permissions." } },
+      { id: "before-you-begin", title: "Before you begin", paragraphs: ["Your Movira workspace is created for a specific location. The modules you can see depend on the location’s subscription and your assigned role."], bullets: ["Use the welcome email to set your permanent password.", "Confirm that the location shown in the account switcher is correct.", "Ask your administrator for access if a required section is not visible."], callout: { tone: "info", title: "Location-specific access", text: "Switching locations can change the available navigation because each location may have different modules and permissions." } },
       { id: "setup-checklist", title: "Complete the setup checklist", steps: ["Open Admin → Locations and review the business name, address, timezone, currency, and tax settings.", "Set store hours and any special holiday hours.", "Create zones and areas used for capacity and booking allocation.", "Invite team members and assign the minimum role required for their work.", "Create at least one activity and schedule its available sessions.", "Review booking portal branding and publish the customer-facing portal."] },
       { id: "first-transaction", title: "Run a first transaction", paragraphs: ["Create a test customer and booking before opening sales. Confirm the booking appears in All Bookings, the amount is correct, and the confirmation email is delivered."], callout: { tone: "success", title: "Ready for daily use", text: "Once a booking, payment, confirmation, and check-in complete successfully, the core operating flow is ready." } },
     ],
   },
   {
     slug: "switch-between-parks",
-    title: "Switch between parks",
-    description: "Use the park selector safely and understand why menus and data change between locations.",
+    title: "Switch between locations",
+    description: "Use the location selector safely and understand why menus and data change between locations.",
     category: "getting-started",
     minutes: 3,
     updated: "2026-08-07",
     keywords: ["park switcher", "location", "multiple parks", "access"],
     sections: [
-      { id: "switch", title: "Select a park", steps: ["Open the account and park selector in the top-right corner.", "Search by park name, city, or state.", "Select the park you want to operate.", "Wait for the active park badge and page data to refresh before making changes."] },
-      { id: "what-changes", title: "What changes after switching", bullets: ["Bookings, customers, products, schedules, terminals, reports, and settings are scoped to the selected park.", "Navigation only displays modules assigned to that park and allowed by your role.", "Theme and branding may also change for the selected park."] },
-      { id: "missing", title: "A park is missing", paragraphs: ["If a park does not appear in search, your user account is not assigned to it, the park is archived, or access has expired. Contact a Movira administrator; do not try to work around park scope by editing a URL."], callout: { tone: "warning", title: "Check before saving", text: "Always verify the active park before creating customers, bookings, products, or staff schedules." } },
+      { id: "switch", title: "Select a location", steps: ["Open the account and location selector in the top-right corner.", "Search by location name, city, or state/province.", "Select the location you want to operate.", "Wait for the active location and page data to refresh before making changes."] },
+      { id: "what-changes", title: "What changes after switching", bullets: ["Bookings, customers, products, schedules, terminals, reports, and settings are scoped to the selected location.", "Navigation only displays modules assigned to that location and allowed by your role.", "Theme and branding may also change for the selected location."] },
+      { id: "missing", title: "A location is missing", paragraphs: ["If a location does not appear in search, your user account is not assigned to it, the location is archived, or access has expired. Contact a Movira administrator; do not try to work around location scope by editing a URL."], callout: { tone: "warning", title: "Check before saving", text: "Always verify the active location before creating customers, bookings, products, or staff schedules." } },
     ],
   },
   {
     slug: "configure-location-hours-and-zones",
-    title: "Configure park details, hours, and zones",
+    title: "Configure location details, hours, and zones",
     description: "Prepare the operational foundation used by availability, bookings, staffing, and reports.",
     category: "getting-started",
     minutes: 6,
     updated: "2026-08-07",
     keywords: ["location", "hours", "zones", "areas", "tax", "capacity"],
     sections: [
-      { id: "location", title: "Review location settings", steps: ["Open Admin → Locations.", "Edit the active park and confirm its address, contact details, timezone, currency, and tax configuration.", "Save changes and refresh the page to confirm they persisted."] },
+      { id: "location", title: "Review location settings", steps: ["Open Admin → Locations.", "Edit the active location and confirm its address, contact details, timezone, currency, and tax configuration.", "Save changes and refresh the page to confirm they persisted."] },
       { id: "hours", title: "Set operating hours", paragraphs: ["Store hours define the normal working window. Add special hours for holidays, closures, or one-off extended sessions so customer availability stays accurate."], steps: ["Open Store Hours.", "Set opening and closing time for each weekday.", "Add special hours for exceptions and save."] },
       { id: "zones", title: "Create zones and areas", paragraphs: ["Zones represent bookable or operational spaces. Use clear public names, set realistic capacity, and avoid duplicate areas."], callout: { tone: "info", title: "Capacity source", text: "Activity and booking availability can depend on zone capacity, so configure zones before publishing activities." } },
     ],
@@ -94,7 +94,7 @@ export const articles: Article[] = [
     featured: true,
     keywords: ["new booking", "reservation", "availability", "customer", "payment"],
     sections: [
-      { id: "start", title: "Start a new booking", steps: ["Select the correct park, then choose New Booking.", "Choose the visit date and product type.", "Select an available activity or session and the required quantity.", "Review capacity, time, and price before continuing."] },
+      { id: "start", title: "Start a new booking", steps: ["Select the correct location, then choose New Booking.", "Choose the visit date and product type.", "Select an available activity or session and the required quantity.", "Review capacity, time, and price before continuing."] },
       { id: "customer", title: "Add the customer", paragraphs: ["Search by name, email, or phone before creating a customer to avoid duplicates. If no match exists, create a profile with accurate contact details."], steps: ["Select the customer.", "Add participants, extras, vouchers, or membership benefits where applicable.", "Review taxes, discounts, and the outstanding balance."] },
       { id: "confirm", title: "Confirm the booking", paragraphs: ["Choose the supported payment method, complete payment or send a payment link, and confirm the booking. The confirmation page shows the booking number and next actions."], callout: { tone: "success", title: "Verification", text: "A successful booking appears in All Bookings and the customer receives the configured confirmation message." } },
     ],
@@ -124,7 +124,7 @@ export const articles: Article[] = [
     sections: [
       { id: "filters", title: "Set the calendar view", steps: ["Open Calendar.", "Choose a focus date and Day, Week, or Month view.", "Filter by zone type and adjust the operating time range.", "Use the empty-zone option only when planning unused capacity."] },
       { id: "read", title: "Read the live board", bullets: ["Allocated shows zones with booking blocks.", "Available shows zones that can still accept demand.", "Over capacity flags conflicts that need attention.", "Utilization compares allocated capacity with available capacity."] },
-      { id: "no-data", title: "When no zones appear", paragraphs: ["Clear filters, verify that zones exist for the active park, confirm operating hours include the selected time, and check that activities are linked to the correct zone."], callout: { tone: "info", title: "Calendar scope", text: "The calendar only shows data for the currently selected park." } },
+      { id: "no-data", title: "When no zones appear", paragraphs: ["Clear filters, verify that zones exist for the active location, confirm operating hours include the selected time, and check that activities are linked to the correct zone."], callout: { tone: "info", title: "Calendar scope", text: "The calendar only shows data for the currently selected location." } },
     ],
   },
   {
@@ -138,7 +138,7 @@ export const articles: Article[] = [
     keywords: ["slots", "availability", "sales cutoff", "sales cut-off", "temporary hold", "capacity", "checkout timer", "expired session"],
     sections: [
       { id: "one-source", title: "Use one schedule as the source of truth", paragraphs: ["Session start times, duration, capacity, sales cut-off, and availability should come from the same activity schedule for Admin, POS, and the public booking portal."], bullets: ["A 10-minute interval creates start times such as 10:00, 10:10, and 10:20.", "A 60-minute duration controls the end time; it does not replace the start interval.", "Capacity must be calculated against the selected session and every overlapping resource it uses."] },
-      { id: "sales-cutoff", title: "Apply the sales cut-off", steps: ["Open Catalog → Activity Schedule and select the activity.", "Set the session interval, duration, capacity, and sales cut-off.", "Save and preview the same date in Admin, POS, and the booking portal.", "Confirm a session disappears or becomes unavailable when its park-local cut-off time passes."], callout: { tone: "info", title: "Park time is authoritative", text: "Availability and cut-off checks use the active park timezone, not the browser or staff member’s device timezone." } },
+      { id: "sales-cutoff", title: "Apply the sales cut-off", steps: ["Open Catalog → Activity Schedule and select the activity.", "Set the session interval, duration, capacity, and sales cut-off.", "Save and preview the same date in Admin, POS, and the booking portal.", "Confirm a session disappears or becomes unavailable when the cut-off time in the location timezone passes."], callout: { tone: "info", title: "Location time is authoritative", text: "Availability and cut-off checks use the active location timezone, not the browser or staff member’s device timezone." } },
       { id: "holds", title: "Understand temporary holds", paragraphs: ["Adding an item to a cart should not consume capacity by itself. The temporary hold begins when the customer enters the payment step and the checkout timer starts."], bullets: ["One guest holds one capacity unit unless the selected product explicitly consumes more than one resource.", "Two guests should normally hold two capacity units, not four.", "An expired timer releases the hold automatically.", "A completed payment converts the hold into confirmed booked capacity."] },
       { id: "expired", title: "When a session expires in the cart", paragraphs: ["If the selected session or its sales cut-off passes before payment, checkout must stop. Remove the expired line from the cart, explain what changed, and ask the customer to select a new time."], callout: { tone: "warning", title: "Revalidate at every boundary", text: "Validate the session when it is selected, when payment begins, and again before the booking is confirmed." } },
     ],
@@ -167,7 +167,7 @@ export const articles: Article[] = [
     updated: "2026-08-07",
     keywords: ["inventory", "stock", "extras", "addons", "promo", "discount"],
     sections: [
-      { id: "inventory", title: "Inventory basics", paragraphs: ["Create each physical item once, assign it to the correct park, and set its sale price, tax treatment, reorder level, and available quantity."], bullets: ["Use consistent SKU names.", "Record adjustments instead of overwriting unexplained differences.", "Review low-stock items before busy sessions."] },
+      { id: "inventory", title: "Inventory basics", paragraphs: ["Create each physical item once, assign it to the correct location, and set its sale price, tax treatment, reorder level, and available quantity."], bullets: ["Use consistent SKU names.", "Record adjustments instead of overwriting unexplained differences.", "Review low-stock items before busy sessions."] },
       { id: "extras", title: "Attach extras", steps: ["Create the extra in Catalog → Extras.", "Set its price and stock behavior.", "Attach it only to eligible activities or bundles.", "Test it in the booking flow and POS."] },
       { id: "promos", title: "Create a safe promotion", paragraphs: ["Define the discount type, value, eligible products, customer conditions, usage limit, and active dates. Avoid overlapping automatic promotions unless stacking is intentional."], callout: { tone: "warning", title: "Test the total", text: "Before sharing a promo code, place a test order and verify discount, tax, and refund behavior." } },
     ],
@@ -183,8 +183,8 @@ export const articles: Article[] = [
     keywords: ["promo", "promotion", "discount code", "eligible activities", "sales channels", "expiry", "usage limit"],
     sections: [
       { id: "offer", title: "1. Set up the offer", steps: ["Open Catalog → Promos and choose Create New Promo.", "Enter a customer-facing name and a unique promo code.", "Choose percentage or fixed amount and enter the discount value.", "Select specific eligible activities, or leave the list empty to apply the promo to every eligible activity."], callout: { tone: "info", title: "Eligible activities are optional", text: "Leave the field empty only when the business truly intends the promo to work across every eligible activity." } },
-      { id: "dates", title: "2. Add booking and redemption rules", bullets: ["Booking cut-off controls the last date the code can be entered.", "Redemption dates control when the booked activity may occur.", "Selected weekdays and times narrow redemption to specific sessions.", "The park timezone is used for every date and time comparison."] },
-      { id: "channels", title: "3. Choose real sales channels", paragraphs: ["Only select channels enabled for the active park. Typical supported channels are Point of sale and Online checkout; unavailable kiosk or park-manager channels should not be offered."], bullets: ["When the channel rule is off, the promo can be used in every supported channel.", "When it is on, at least one available channel must be selected."] },
+      { id: "dates", title: "2. Add booking and redemption rules", bullets: ["Booking cut-off controls the last date the code can be entered.", "Redemption dates control when the booked activity may occur.", "Selected weekdays and times narrow redemption to specific sessions.", "The location timezone is used for every date and time comparison."] },
+      { id: "channels", title: "3. Choose real sales channels", paragraphs: ["Only select channels enabled for the active location. Typical supported channels are Point of sale and Online checkout; unavailable kiosk or manager channels should not be offered."], bullets: ["When the channel rule is off, the promo can be used in every supported channel.", "When it is on, at least one available channel must be selected."] },
       { id: "limits", title: "4. Set usage limits", bullets: ["Per code limits the total uses of that promo code.", "Per customer limits repeat use by the same customer.", "Per booking rules limit how many discounted items can be included in one checkout.", "Allow multiple uses only when the offer is designed to stack inside the same booking."] },
       { id: "status", title: "Read promo status", paragraphs: ["The promo list should display a readable Active, Scheduled, Expired, or Inactive status together with its expiry date. A numeric status value is not customer- or staff-friendly."], callout: { tone: "success", title: "Example", text: "SUMMER20 gives 20% off selected Session Passes online, Monday–Friday from 10:00 to 17:00, until 31 August, with one use per customer." } },
     ],
@@ -199,9 +199,9 @@ export const articles: Article[] = [
     featured: true,
     keywords: ["customer", "profile", "duplicate", "booking history", "contact"],
     sections: [
-      { id: "create", title: "Create a customer", steps: ["Open Customers and select Add Customer.", "Search existing customers by email and phone first.", "Enter name and valid contact information.", "Add optional address, birthday, tags, or notes only when relevant.", "Save and confirm the customer appears in the active park."] },
+      { id: "create", title: "Create a customer", steps: ["Open Customers and select Add Customer.", "Search existing customers by email and phone first.", "Enter name and valid contact information.", "Add optional address, birthday, tags, or notes only when relevant.", "Save and confirm the customer appears in the active location."] },
       { id: "profile", title: "Understand the profile", bullets: ["Overview: contact details and account summary.", "Bookings: reservation history and upcoming visits.", "Memberships, gift cards, and vouchers: issued products and balances.", "Forms and waivers: completed customer documents.", "CRM activity: messages, tags, and engagement where enabled."] },
-      { id: "missing", title: "A customer was created but is missing", paragraphs: ["Confirm the active park, clear search filters, and search the exact email address. Customer visibility is park-scoped; a profile created in one park may not appear in another unless it is linked there."], callout: { tone: "warning", title: "Avoid duplicates", text: "Do not create a second profile until you have searched by both email and phone." } },
+      { id: "missing", title: "A customer was created but is missing", paragraphs: ["Confirm the active location, clear search filters, and search the exact email address. Customer visibility is location-scoped; a profile created in one location may not appear in another unless it is linked there."], callout: { tone: "warning", title: "Avoid duplicates", text: "Do not create a second profile until you have searched by both email and phone." } },
     ],
   },
   {
@@ -216,7 +216,7 @@ export const articles: Article[] = [
       { id: "difference", title: "Choose the correct product", bullets: ["Gift card: stored monetary value used to pay for eligible purchases.", "Voucher pack: a prepaid number of redemptions for selected activities.", "Membership: recurring or fixed-term access and discounts linked to a member."] },
       { id: "issue", title: "Issue to a customer", steps: ["Create and publish the product in Catalog.", "Open the customer profile or complete an eligible sale.", "Select the correct product and verify price, currency, validity, and recipient.", "Complete payment and confirm the issued record appears under Customers."] },
       { id: "purchase-versus-issue", title: "Product versus issued record", paragraphs: ["A catalog product defines what can be sold. The Customers lists show records that have actually been issued after a completed purchase or a staff-issued transaction."], callout: { tone: "info", title: "Why a gift product can exist with zero cards", text: "Creating a Gift Card product does not create an issued card. Complete a sale or issue it to a customer before it appears in the issued Gift Cards list." } },
-      { id: "troubleshoot", title: "When an issued product does not load", paragraphs: ["Confirm the active park and module access, then clear filters and retry. If the request is cancelled or times out, capture the page URL, customer email, approximate time, and browser network request before contacting support."], callout: { tone: "info", title: "Do not reissue immediately", text: "Check the customer profile and payment history first to avoid creating duplicate value." } },
+      { id: "troubleshoot", title: "When an issued product does not load", paragraphs: ["Confirm the active location and module access, then clear filters and retry. If the request is cancelled or times out, capture the page URL, customer email, approximate time, and browser network request before contacting support."], callout: { tone: "info", title: "Do not reissue immediately", text: "Check the customer profile and payment history first to avoid creating duplicate value." } },
     ],
   },
   {
@@ -250,8 +250,8 @@ export const articles: Article[] = [
     sections: [
       { id: "open", title: "Open Waiver Setup", steps: ["Open Connected Apps → Waiver Setup.", "Enter the customer-facing agreement name.", "Optionally add a header image.", "Write the agreement content and add every required checkbox statement."] },
       { id: "rules", title: "Configure signing rules", bullets: ["Require digital signature when a drawn or typed signature is mandatory.", "Include minors by default when guardians normally sign for attending children.", "Set Valid for to control how many days a signed waiver remains active.", "Set the minimum signing age; younger customers require a parent or guardian.", "Enable expiry reminders only when customer email delivery is configured."] },
-      { id: "data", title: "Choose customer data", paragraphs: ["Name, email, and date of birth are captured by the standard flow. Enable address or a custom agreement form only when the park requires additional information."], callout: { tone: "warning", title: "Collect only what you need", text: "Avoid unnecessary personal data. Every additional field should have a clear operational or legal purpose." } },
-      { id: "publish", title: "Save and publish", steps: ["Choose Save for future signers for routine changes, or Ask everyone to re-sign for a major legal revision.", "Save a draft and review the customer-facing agreement.", "Publish changes to create the active waiver.", "Copy the agreement link and test it in a private browser window."], callout: { tone: "info", title: "No active waiver configured", text: "This message means a draft exists or no waiver has been published for the selected park. Publish the agreement before retrying the booking." } },
+      { id: "data", title: "Choose customer data", paragraphs: ["Name, email, and date of birth are captured by the standard flow. Enable address or a custom agreement form only when the location requires additional information."], callout: { tone: "warning", title: "Collect only what you need", text: "Avoid unnecessary personal data. Every additional field should have a clear operational or legal purpose." } },
+      { id: "publish", title: "Save and publish", steps: ["Choose Save for future signers for routine changes, or Ask everyone to re-sign for a major legal revision.", "Save a draft and review the customer-facing agreement.", "Publish changes to create the active waiver.", "Copy the agreement link and test it in a private browser window."], callout: { tone: "info", title: "No active waiver configured", text: "This message means a draft exists or no waiver has been published for the selected location. Publish the agreement before retrying the booking." } },
     ],
   },
   {
@@ -260,13 +260,31 @@ export const articles: Article[] = [
     description: "Route the POS channel, create tills, pair readers, and verify card-present payments.",
     category: "payments-pos",
     minutes: 9,
-    updated: "2026-08-07",
+    updated: "2026-10-08",
     featured: true,
     keywords: ["POS", "terminal", "reader", "pairing code", "gateway", "Stripe", "Nuvei"],
     sections: [
-      { id: "requirements", title: "Before adding a terminal", bullets: ["The POS module must be assigned to the park in Movira Control.", "A compatible park payment credential must be saved and successfully tested.", "The POS / card terminal channel must be routed to that provider.", "Demo parks use sandbox credentials; production parks use live credentials."] },
+      { id: "requirements", title: "Before adding a terminal", bullets: ["The POS module must be assigned to the location in Movira Control.", "A compatible location payment credential must be saved and successfully tested.", "The POS / card terminal channel must be routed to that provider.", "Demo locations use sandbox credentials; production locations use live credentials."] },
       { id: "terminal", title: "Create a till and reader", steps: ["Open Connected Apps → POS / Terminals.", "Select Add Terminal and enter a recognizable till name.", "Use the generated one-time pairing code to connect the cashier device.", "Add a card reader under that terminal.", "Register a real reader with the provider code or use a simulator only in demo mode.", "Set one reader as the default and run a small test payment."] },
       { id: "pairing", title: "About pairing codes", paragraphs: ["A pairing code links a cashier device to a specific terminal. It is short-lived and should be treated like a temporary password. Regenerate it if it expires or was exposed."], callout: { tone: "warning", title: "Reader is not the till", text: "A terminal is the cashier station. A reader is the physical or simulated card device attached beneath it." } },
+    ],
+  },
+  {
+    slug: "configure-payment-gateways-and-routing",
+    title: "Configure payment gateways and routing",
+    description: "Connect Stripe, Nuvei, or Razorpay and route each location payment channel safely.",
+    category: "payments-pos",
+    minutes: 8,
+    updated: "2026-10-08",
+    featured: true,
+    keywords: ["gateway", "routing", "Stripe", "Nuvei", "Razorpay", "sandbox", "live", "location"],
+    sections: [
+      { id: "provider", title: "Choose a supported provider", paragraphs: ["Movira supports Stripe, Nuvei, and Razorpay for hosted online payments. Stripe and Nuvei can also support card-present flows when the required terminal integration and POS module are configured."], bullets: ["Stripe: online checkout, payment links, recurring payments, and supported Stripe Terminal setups.", "Nuvei: hosted online checkout and payment links, recurring payments, and supported Nuvei terminal setups.", "Razorpay: online checkout and payment links; no Movira card-terminal integration."] },
+      { id: "scope", title: "Choose credential scope", paragraphs: ["An organization-wide credential is available to every location in the organization. A location-specific credential overrides the organization credential only for that location when the route uses the same provider and mode."], callout: { tone: "info", title: "Separate from Movira subscription billing", text: "These credentials collect payments from your guests. Movira uses a separate platform-owned credential to collect SaaS subscription invoices." } },
+      { id: "connect", title: "Add and test credentials", steps: ["Open Payments → Gateways.", "Choose Add gateway and select the provider.", "Choose organization-wide or a specific location.", "Select Sandbox for a demo location or Live for a production location.", "Enter the provider fields and run Test connection.", "Save only after the test succeeds."] },
+      { id: "route", title: "Route each payment channel", steps: ["Open the location or the Routing view.", "Choose Online booking, Payment link, Recurring, Kiosk, or POS / card terminal.", "Select a provider and the mode required by the location.", "Save the route and confirm it resolves to an active credential.", "For POS, register a terminal and reader after the POS route is ready."] },
+      { id: "rules", title: "Understand the safeguards", bullets: ["Demo locations accept sandbox credentials and routes only.", "Production locations accept live credentials and routes only.", "A saved credential does nothing until a channel route points to its provider and mode.", "Movira resolves a matching location credential first, then an organization-wide credential. A disabled location override blocks unsafe fallback; if no active match exists, the route is unavailable.", "Provider secrets are encrypted and are not displayed again after saving."] },
+      { id: "troubleshoot", title: "When a route is not ready", bullets: ["Confirm the credential scope, provider, and mode match the route.", "Run Test connection again after rotating provider keys.", "For Nuvei online payments, confirm the deployed webhook/DMN URL is public HTTPS.", "For terminals, confirm the POS module, terminal registration, reader assignment, and provider mode.", "Do not test real cards against a sandbox route."] },
     ],
   },
   {
@@ -275,12 +293,12 @@ export const articles: Article[] = [
     description: "Choose the correct payment channel and safely recover when a customer has not completed payment.",
     category: "payments-pos",
     minutes: 6,
-    updated: "2026-08-07",
+    updated: "2026-10-08",
     keywords: ["payment", "payment link", "cash", "card", "outstanding", "resend"],
     sections: [
       { id: "channels", title: "Use the correct channel", bullets: ["Online booking: checkout on the public booking portal.", "Payment link: a secure hosted link sent to a customer.", "POS / card terminal: in-person card-present transactions.", "Recurring: scheduled membership payments where enabled."] },
       { id: "link", title: "Send or resend a payment link", steps: ["Open the booking or SaaS invoice with an outstanding balance.", "Select Send payment link.", "Confirm the recipient email, amount, currency, and expiry.", "Send the link and review the event history.", "Use Resend only if the existing invoice remains unpaid."] },
-      { id: "safety", title: "Payment safety", paragraphs: ["Never ask a customer to send card details by email or chat. Movira stores provider references rather than displaying full card credentials."], callout: { tone: "warning", title: "Live versus sandbox", text: "Sandbox transactions cannot make a production park live or settle real funds." } },
+      { id: "safety", title: "Payment safety", paragraphs: ["Never ask a customer to send card details by email or chat. Movira stores provider references rather than displaying full card credentials."], callout: { tone: "warning", title: "Live versus sandbox", text: "Sandbox transactions cannot make a production location live or settle real funds." } },
     ],
   },
   {
@@ -306,7 +324,7 @@ export const articles: Article[] = [
     updated: "2026-08-07",
     keywords: ["staff", "schedule", "shift", "position", "publish"],
     sections: [
-      { id: "prepare", title: "Prepare the schedule", steps: ["Create the positions used at the park.", "Confirm each team member’s position, availability, and employment status.", "Review Workforce Settings for opening hours, breaks, approvals, and labor guardrails."] },
+      { id: "prepare", title: "Prepare the schedule", steps: ["Create the positions used at the location.", "Confirm each team member’s position, availability, and employment status.", "Review Workforce Settings for opening hours, breaks, approvals, and labor guardrails."] },
       { id: "build", title: "Build and publish", steps: ["Open Staff → Schedule and choose the week.", "Add shifts or apply a shift template.", "Assign team members and resolve overlaps, availability conflicts, or labor warnings.", "Review open shifts and estimated labor cost.", "Publish when the schedule is complete."] },
       { id: "changes", title: "Handle changes", paragraphs: ["After publishing, notify affected team members when editing or deleting shifts. Use the marketplace and approval flow for offers, swaps, and open-shift claims."], callout: { tone: "info", title: "Draft versus published", text: "Draft schedules are planning data. Employees should act only on the latest published schedule." } },
     ],
@@ -320,9 +338,9 @@ export const articles: Article[] = [
     updated: "2026-08-07",
     keywords: ["time clock", "timesheet", "leave", "availability", "approval"],
     sections: [
-      { id: "attendance", title: "Attendance workflow", steps: ["Employees clock in and out against the active park and scheduled shift.", "Managers review late arrivals, no-shows, missing clock-outs, and break exceptions.", "Correct entries with a reason and retain approval history.", "Approve timesheets before payroll export."] },
+      { id: "attendance", title: "Attendance workflow", steps: ["Employees clock in and out against the active location and scheduled shift.", "Managers review late arrivals, no-shows, missing clock-outs, and break exceptions.", "Correct entries with a reason and retain approval history.", "Approve timesheets before payroll export."] },
       { id: "leave", title: "Leave and availability", bullets: ["Availability indicates when a team member can normally work.", "Time off is a dated leave request requiring the configured approval.", "Shift marketplace handles offers, swaps, and open-shift claims."] },
-      { id: "reports", title: "Payroll readiness", paragraphs: ["Before exporting Payroll CSV, confirm the date range, resolve attendance exceptions, approve timesheets, and review overtime. The export reflects the active park only."], callout: { tone: "warning", title: "Timezone matters", text: "Incorrect park timezone or schedule settings can shift attendance and payroll dates." } },
+      { id: "reports", title: "Payroll readiness", paragraphs: ["Before exporting Payroll CSV, confirm the date range, resolve attendance exceptions, approve timesheets, and review overtime. The export reflects the active location only."], callout: { tone: "warning", title: "Timezone matters", text: "Incorrect location timezone or schedule settings can shift attendance and payroll dates." } },
     ],
   },
   {
@@ -338,7 +356,7 @@ export const articles: Article[] = [
       { id: "audience", title: "Define the audience", paragraphs: ["Start with a clear purpose and choose the smallest relevant customer segment. Review filters, exclusions, consent, and the estimated eligible recipient count before writing content."], bullets: ["Customers without an email address cannot receive an email campaign.", "Unsubscribed, complained, or suppressed addresses are excluded automatically.", "Use Customers → bulk selection → Send email when the campaign begins from a selected group of customers."] },
       { id: "campaign-type", title: "Choose the campaign type", bullets: ["Standard campaigns send one message to the eligible audience.", "Drip campaigns send configured steps over time and show enrollment progress in campaign activity.", "RSS campaigns check a feed and create sends from new eligible items using the selected segment and template.", "Customer bulk email starts from Customers; it is not a separate campaign section in the main navigation."] },
       { id: "build", title: "Build and test", steps: ["Open CRM → Marketing → Emails → Campaigns and choose Create campaign.", "Select the audience segment, verified sending domain, and marketing template.", "Add a recognizable sender name, subject, preview text, and one clear call to action.", "Use the template workspace for Design, Code, or Plain text content.", "Run the campaign preflight check and correct every blocking issue.", "Send a test to your team and check desktop and mobile rendering.", "Confirm links, merge fields, unsubscribe behavior, audience, and delivery time."] },
-      { id: "delivery", title: "Choose delivery controls", bullets: ["Queue or Send now places eligible recipients into the delivery queue.", "Schedule sends at the chosen date and time using the park timezone.", "Delivery windows restrict marketing email to the configured days and hours.", "Pause prevents additional queued messages from being dispatched; Resume continues them.", "Stop cancels recipients that have not started sending and cannot recall messages already accepted by the provider."] },
+      { id: "delivery", title: "Choose delivery controls", bullets: ["Queue or Send now places eligible recipients into the delivery queue.", "Schedule sends at the chosen date and time using the location timezone.", "Delivery windows restrict marketing email to the configured days and hours.", "Pause prevents additional queued messages from being dispatched; Resume continues them.", "Stop cancels recipients that have not started sending and cannot recall messages already accepted by the provider."] },
       { id: "monitor", title: "Monitor delivery and results", paragraphs: ["Use Statistics for delivery, opens, clicks, bounces, complaints, unsubscribes, and conversions. Open Campaign activity for recipient-level progress and events. Failed Inbox contains messages that need attention; Queue Monitor and Audit Logs provide operational detail when deeper diagnosis is required."], bullets: ["Queued means the message is waiting for worker capacity, a sending limit, or its delivery window.", "Failed messages include the last recorded reason and may offer a controlled retry.", "Paused and stopped are campaign controls; they do not recall email already accepted by the provider.", "Do not repeatedly resend to bounced, complained, unsubscribed, or suppressed contacts."], callout: { tone: "info", title: "Transactional emails", text: "Booking confirmations and other system emails use the Transactional channel, templates, failed inbox, and notification-event configuration." } },
     ],
   },
@@ -357,7 +375,7 @@ export const articles: Article[] = [
       { id: "operators", title: "Use the right operator", bullets: ["Text and select fields offer only relevant choices such as is, is not, contains, starts with, ends with, filled, or not filled.", "Number fields support equal, not equal, greater or less than, inclusive comparisons, and between.", "Date operators are grouped into Fixed date, Dynamic date, and Field status.", "Fixed date includes exact date, date range, before, and after.", "Dynamic date includes today, yesterday, day of month, rolling past or future periods, exact days, weeks, or months ago, and relative date ranges.", "Date values use the shared calendar picker so the displayed format and saved date stay consistent."] },
       { id: "segments", title: "Use tags and segments", paragraphs: ["Tags describe a customer. Segments define an audience. A segment can be used by campaigns, bulk enrollment, and automation without rebuilding the same filter each time."], steps: ["Apply consistent tags to customers or use a bulk tag action.", "Create a segment from customer rules or the current advanced filter.", "Preview and refresh the segment count before a large send.", "Open the segment action menu to email or enroll its customers in a published workflow."] },
       { id: "bulk-email", title: "Email selected customers", steps: ["Select the customers on the current result set.", "Choose Send email from the bulk actions.", "Review the selected audience and exclusions.", "Create a new campaign or continue the generated draft in Marketing.", "Test, schedule, or send the campaign from the campaign workflow."], callout: { tone: "warning", title: "Selection is not consent", text: "A selected customer can still be excluded because of unsubscribe, complaint, suppression, missing email, or other delivery safeguards." } },
-      { id: "sync-history", title: "Read Sync History errors", paragraphs: ["Completed with errors means the sync run finished but one or more rows were rejected. Open the run to see the row, source customer ID, timestamp, and exact validation reason."], bullets: ["“Contact requires an email” means the source customer did not provide the email required by the CRM contact rule.", "Correct the source customer and retry the sync instead of creating a duplicate CRM record.", "A completed run with zero row errors needs no manual repair."], callout: { tone: "info", title: "Location scope", text: "Customers, tags, segments, and sync history always belong to the active park. Confirm the park selector before editing or troubleshooting." } },
+      { id: "sync-history", title: "Read Sync History errors", paragraphs: ["Completed with errors means the sync run finished but one or more rows were rejected. Open the run to see the row, source customer ID, timestamp, and exact validation reason."], bullets: ["“Contact requires an email” means the source customer did not provide the email required by the CRM contact rule.", "Correct the source customer and retry the sync instead of creating a duplicate CRM record.", "A completed run with zero row errors needs no manual repair."], callout: { tone: "info", title: "Location scope", text: "Customers, tags, segments, and sync history always belong to the active location. Confirm the location selector before editing or troubleshooting." } },
     ],
   },
   {
@@ -421,7 +439,7 @@ export const articles: Article[] = [
       { id: "suppression", title: "Understand suppression reasons", bullets: ["Unsubscribe is the recipient’s marketing choice and must not be bypassed.", "Complaint means the recipient reported mail as unwanted.", "Hard bounce or invalid means the address should not be retried until it is corrected and safe.", "Manual or admin block was added by an authorized user.", "A suppression can affect future email even when the customer remains visible in CRM."] },
       { id: "failures", title: "Review a failed message", steps: ["Open Failed Inbox and select Marketing or Transactional.", "Filter or search for the recipient or message.", "Read the last error and recent message events.", "Correct the underlying audience, template, sender, domain, provider, or address problem.", "Use Retry only when the screen offers it and the cause has been corrected."], callout: { tone: "warning", title: "Do not force unsafe retries", text: "Never release or retry an unsubscribe, complaint, or permanent bounce merely to make a campaign count increase." } },
       { id: "queue", title: "Read queue status", bullets: ["Queued means the message is waiting for processing, available capacity, a delivery window, or a scheduled time.", "Processing means a worker has started the job.", "Sent or accepted means the provider accepted it; later webhook events can still report delivery or bounce.", "Stale means the item has waited longer than the monitor threshold and needs investigation.", "Recoverable means Movira can safely offer a retry after configuration or worker availability is restored."] },
-      { id: "escalate", title: "Escalate with useful details", paragraphs: ["If the reason is unclear, provide support with the active park, recipient, campaign or event name, message ID when visible, exact error, and approximate time with timezone."], callout: { tone: "info", title: "Worker health", text: "Queue Monitor is useful for diagnosis, but customers do not need to operate deployment workers. If processing is unavailable across many messages, contact your Movira administrator or support team." } },
+      { id: "escalate", title: "Escalate with useful details", paragraphs: ["If the reason is unclear, provide support with the active location, recipient, campaign or event name, message ID when visible, exact error, and approximate time with timezone."], callout: { tone: "info", title: "Worker health", text: "Queue Monitor is useful for diagnosis, but customers do not need to operate deployment workers. If processing is unavailable across many messages, contact your Movira administrator or support team." } },
     ],
   },
   {
@@ -458,18 +476,18 @@ export const articles: Article[] = [
   {
     slug: "manage-users-roles-and-permissions",
     title: "Manage users, roles, and permissions",
-    description: "Give every team member the access they need without exposing unrelated modules or parks.",
+    description: "Give every team member the access they need without exposing unrelated modules or locations.",
     category: "admin-troubleshooting",
     minutes: 7,
     updated: "2026-09-28",
     featured: true,
     keywords: ["user", "role", "permission", "module", "access", "security"],
     sections: [
-      { id: "access-model", title: "How access works", paragraphs: ["A user can open a feature only when the selected park owns the module and the assigned role grants the required action. Park assignment, module entitlement, and role permission work together."], bullets: ["Park assignment controls which parks appear.", "Module entitlement controls which product areas exist for that park.", "Role permission controls View, Create, Edit, Delete, and other supported actions inside those areas.", "The same action permission controls list buttons and direct routes; hiding a button alone is not authorization."] },
-      { id: "protected-roles", title: "Protected roles and users", bullets: ["Super Admin has all platform permissions and its role assignment is read-only.", "The park Owner receives the permissions made available to that park and can manage local roles.", "Super Admin and Owner cannot be deleted from their protected scope.", "Protected Super Admin and Admin permission sets are visible as read-only rather than editable checkboxes.", "A park owner does not see the platform Super Admin role in local role management."] },
-      { id: "create", title: "Create safe access", steps: ["Open Admin → Roles & Permissions and create or review a custom role.", "Grant only the required View, Create, Edit, Delete, approve, refund, or administrative actions.", "Save, reopen the role, and confirm the selected permissions remain checked.", "Open Admin → Users and create the user.", "Assign the correct park or parks and a permitted role.", "Ask the user to sign in and confirm the visible navigation and row actions."] },
+      { id: "access-model", title: "How access works", paragraphs: ["A user can open a feature only when the selected location owns the module and the assigned role grants the required action. Location assignment, module entitlement, and role permission work together."], bullets: ["Location assignment controls which locations appear.", "Module entitlement controls which product areas exist for that location.", "Role permission controls View, Create, Edit, Delete, and other supported actions inside those areas.", "The same action permission controls list buttons and direct routes; hiding a button alone is not authorization."] },
+      { id: "protected-roles", title: "Protected roles and users", bullets: ["Super Admin has all platform permissions and its role assignment is read-only.", "The location Owner receives the permissions made available to that location and can manage local roles.", "Super Admin and Owner cannot be deleted from their protected scope.", "Protected Super Admin and Admin permission sets are visible as read-only rather than editable checkboxes.", "A location owner does not see the platform Super Admin role in local role management."] },
+      { id: "create", title: "Create safe access", steps: ["Open Admin → Roles & Permissions and create or review a custom role.", "Grant only the required View, Create, Edit, Delete, approve, refund, or administrative actions.", "Save, reopen the role, and confirm the selected permissions remain checked.", "Open Admin → Users and create the user.", "Assign the correct location or locations and a permitted role.", "Ask the user to sign in and confirm the visible navigation and row actions."] },
       { id: "actions", title: "Understand listing actions", paragraphs: ["Create buttons and View, Edit, Delete, Activate, or Deactivate row actions appear only when the current user has the matching permission. Some records, such as owner-managed locations, may allow Edit while Delete remains intentionally unavailable."], callout: { tone: "info", title: "Permission updates should not sign you out", text: "After saving a role, the current session should refresh its effective permissions. An unexpected logout indicates an authorization or session-refresh problem, not a successful permissions update." } },
-      { id: "missing-module", title: "A menu or action is missing", paragraphs: ["Check the active park, the park’s assigned modules, the user’s park assignment, the role permission, and whether the record is protected. Directly entering a hidden URL must not bypass these controls."], callout: { tone: "success", title: "Least privilege", text: "Start with the minimum access required and add permissions only when the workflow needs them." } },
+      { id: "missing-module", title: "A menu or action is missing", paragraphs: ["Check the active location, the location’s assigned modules, the user’s location assignment, the role permission, and whether the record is protected. Directly entering a hidden URL must not bypass these controls."], callout: { tone: "success", title: "Least privilege", text: "Start with the minimum access required and add permissions only when the workflow needs them." } },
     ],
   },
   {
@@ -482,9 +500,9 @@ export const articles: Article[] = [
     featured: true,
     keywords: ["error", "loading", "failed", "retry", "validation", "403", "404", "troubleshoot"],
     sections: [
-      { id: "first", title: "Start with these checks", steps: ["Confirm the correct park is selected.", "Clear page filters and search again.", "Refresh once and wait for the request to finish.", "Confirm your role and the park’s module access.", "Try the same action in a private browser window to rule out stale local state."] },
-      { id: "errors", title: "Understand common errors", bullets: ["400 / validation: a required or incorrectly formatted field needs attention.", "401: the session expired; sign in again.", "403: the user, role, park, or module does not allow the action.", "404: the route or record does not exist in the selected scope.", "Request failed or timeout: the service, network, or upstream provider did not respond successfully."] },
-      { id: "report", title: "Collect useful details", paragraphs: ["Include the page URL, active park, affected record number, exact action, exact error message, date and time, and a screenshot. Never include passwords, payment secret keys, full card data, or session tokens."], callout: { tone: "warning", title: "Protect sensitive data", text: "Movira support will never ask you to send a password or payment credential in a ticket." } },
+      { id: "first", title: "Start with these checks", steps: ["Confirm the correct location is selected.", "Clear page filters and search again.", "Refresh once and wait for the request to finish.", "Confirm your role and the location’s module access.", "Try the same action in a private browser window to rule out stale local state."] },
+      { id: "errors", title: "Understand common errors", bullets: ["400 / validation: a required or incorrectly formatted field needs attention.", "401: the session expired; sign in again.", "403: the user, role, location, or module does not allow the action.", "404: the route or record does not exist in the selected scope.", "Request failed or timeout: the service, network, or upstream provider did not respond successfully."] },
+      { id: "report", title: "Collect useful details", paragraphs: ["Include the page URL, active location, affected record number, exact action, exact error message, date and time, and a screenshot. Never include passwords, payment secret keys, full card data, or session tokens."], callout: { tone: "warning", title: "Protect sensitive data", text: "Movira support will never ask you to send a password or payment credential in a ticket." } },
     ],
   },
   {
@@ -497,8 +515,8 @@ export const articles: Article[] = [
     keywords: ["contact", "support", "ticket", "help", "incident"],
     sections: [
       { id: "before", title: "Before contacting support", paragraphs: ["Check the relevant guide and the common troubleshooting checklist. If the issue affects payments, avoid repeated retries until you have confirmed transaction status."] },
-      { id: "include", title: "What to include", bullets: ["Your name, park, and a safe contact method.", "The exact page URL and action you attempted.", "Booking, invoice, customer, terminal, or ticket reference.", "Exact error text and approximate time with timezone.", "Screenshot with sensitive data hidden.", "Whether all users or only one user are affected."] },
-      { id: "priority", title: "Choose the right priority", bullets: ["Urgent: park-wide outage, safety impact, or confirmed inability to take payments.", "High: a major workflow is blocked with no reasonable workaround.", "Medium: degraded behavior with a workaround.", "Low: question, cosmetic issue, or improvement request."], callout: { tone: "info", title: "Security report", text: "For suspected unauthorized access or exposed credentials, stop using the credential, rotate it, and mark the ticket urgent." } },
+      { id: "include", title: "What to include", bullets: ["Your name, location, and a safe contact method.", "The exact page URL and action you attempted.", "Booking, invoice, customer, terminal, or ticket reference.", "Exact error text and approximate time with timezone.", "Screenshot with sensitive data hidden.", "Whether all users or only one user are affected."] },
+      { id: "priority", title: "Choose the right priority", bullets: ["Urgent: location-wide outage, safety impact, or confirmed inability to take payments.", "High: a major workflow is blocked with no reasonable workaround.", "Medium: degraded behavior with a workaround.", "Low: question, cosmetic issue, or improvement request."], callout: { tone: "info", title: "Security report", text: "For suspected unauthorized access or exposed credentials, stop using the credential, rotate it, and mark the ticket urgent." } },
     ],
   },
 ];
